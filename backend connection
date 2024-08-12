@@ -21,7 +21,7 @@ public class Dbconnect {
         // TODO code application logic here
        try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=DriverManager.getConnection(	"jdbc:mysql://localhost:3306/Depart", "root","kishan@1328*");			
+            Connection con=DriverManager.getConnection(	"jdbc:mysql://localhost:3306/Depart", "root","your_db_name");			
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select * from dep_details"); 
            
